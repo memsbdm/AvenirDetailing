@@ -1,10 +1,31 @@
 <script>
 	import '../app.css';
 	import Header from '$lib/components/Header.svelte';
+	import Menu from '$lib/components/Menu.svelte';
+
+	let menuOpen = false;
+
+	function handleMenuClicked() {
+		menuOpen = !menuOpen;
+		if (menuOpen) {
+			document.body.addEventListener('click', handleMenuClose)
+			document.body.style.overflow = 'hidden'
+		} else {
+			document.body.removeEventListener('click', handleMenuClose)
+		}
+	}
+
+	function handleMenuClose() {
+		menuOpen = false
+		document.body.removeEventListener('click', handleMenuClose)
+		document.body.style.overflow = 'auto'
+	}
 </script>
 
-<Header />
-
+<Header on:menuClicked={handleMenuClicked} />
+{#if menuOpen}
+	<Menu />
+{/if}
 <main class="container mx-auto x-spacing py-10 lg:py-20 xl:py-28">
 	<slot />
 </main>
