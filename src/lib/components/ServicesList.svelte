@@ -10,7 +10,7 @@
 			<div class="icon">
 				<svelte:component this={icon} />
 			</div>
-			<h3 class="subtitle my-3">{label}</h3>
+			<h2 class="subtitle my-3">{label}</h2>
 
 			<p class="text-justify mb-4">{description}</p>
 			<a {href} class="flex items-center gap-3 opacity-70 hover:opacity-100 duration-200"

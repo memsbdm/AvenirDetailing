@@ -32,7 +32,7 @@
 		</div>
 		<div class="flex lg:hidden justify-between items-center">
 			<button class="icon" aria-label="Bouton menu"><FaBars /></button>
-			<a href="/"><Logo /></a>
+			<a href="/" aria-label="Page d'accueil"><Logo /></a>
 			<a href="tel:+33771104470" class="icon" aria-label="Nous joindre par téléphone"><FaPhone /></a>
 		</div>
 	</nav>
