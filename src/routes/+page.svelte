@@ -4,8 +4,13 @@
 	import MdLocalCarWash from 'svelte-icons/md/MdLocalCarWash.svelte';
 	import FaCar from 'svelte-icons/fa/FaCar.svelte';
 	import FaPaintBrush from 'svelte-icons/fa/FaPaintBrush.svelte';
+	import { onMount } from 'svelte';
 
+	let imgDiv;
 	let nbImg = 12;
+	onMount(() => {
+		imgDiv.style.backgroundImage = `url('/images/car/${nbImg}.webp')`;
+	});
 	$: innerWidth = 1920;
 
 	function handleMousemove(event) {
@@ -16,7 +21,6 @@
 		}
 	}
 
-	let imgDiv;
 
 	const services = [
 		{
@@ -103,7 +107,7 @@
 			</ul>
 		</div>
 
-		<div class="lg:w-1/2 bg-contain bg-center" bind:this={imgDiv}>
+		<div class="lg:w-1/2 bg-contain bg-center bg-no-repeat h-96 lg:h-auto" bind:this={imgDiv}>
 		</div>
 	</div>
 </section>
