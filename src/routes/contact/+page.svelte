@@ -368,16 +368,18 @@
 	<div class="contact-card">
 		<h2 class="mb-2">adresses</h2>
 		<a href="https://maps.app.goo.gl/zfqm2HHLGGLwkmBD8" target="_blank"
-			>49 rue de morat, 68000 colmar</a
+			>49 Rue de Morat, 68000 Colmar</a
 		>
 		<a href="https://maps.app.goo.gl/71V3Cf8ocD84VQyJ6" target="_blank"
-			>33 av. de belgique, 68110 illzach</a
+			>33 Av. de Belgique, 68110 Illzach</a
 		>
 	</div>
 	<div class="contact-card">
 		<h2 class="mb-2">horaires d'ouverture</h2>
+		<p class="font-semibold">Illzach</p>
 		<p>lundi à vendredi : 8h - 12h / 13h30 - 17h30</p>
-		<p>samedi - dimanche : fermé</p>
+		<p class="font-semibold">Colmar</p>
+		<p>sur rendez-vous</p>
 	</div>
 </div>
 
