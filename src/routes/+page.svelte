@@ -12,8 +12,11 @@
 		if (window.innerWidth >= 768) {
 			nbImg = Math.round(((event.clientX / window.innerWidth) * 100) / 2);
 			if (nbImg === 0) nbImg = 1;
+			imgDiv.style.backgroundImage = `url('/images/car/${nbImg}.webp')`;
 		}
 	}
+
+	let imgDiv;
 
 	const services = [
 		{
@@ -71,7 +74,7 @@
 </script>
 
 <svelte:head>
-	<title>Avenir Detailing</title>
+	<title>Avenir Detailing | Colmar & Illzach</title>
 </svelte:head>
 <svelte:window bind:innerWidth />
 <svelte:body on:mousemove={handleMousemove} />
@@ -100,8 +103,7 @@
 			</ul>
 		</div>
 
-		<div class="lg:w-1/2 flex justify-center items-center">
-			<img src="/images/car/{nbImg}.webp" alt="Porsche 911 noire." />
+		<div class="lg:w-1/2 bg-contain bg-center" bind:this={imgDiv}>
 		</div>
 	</div>
 </section>
