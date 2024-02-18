@@ -18,6 +18,7 @@
 
 		return async ({ update }) => {
 			loading = false;
+			scrollTo(0, 0);
 			await update();
 		};
 	};
