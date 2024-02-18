@@ -386,7 +386,7 @@
 		@apply font-medium opacity-70 duration-150;
 	}
 
-	input {
+	input, select {
 		background-color: transparent;
 		outline: none;
 		border-radius: 0;
