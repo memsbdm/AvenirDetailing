@@ -15,7 +15,7 @@
 <header class="x-spacing py-3">
 	<nav>
 		<div class="hidden lg:flex justify-between items-center">
-			<a href="/"><Logo /></a>
+			<a href="/" aria-label="Page d'accueil"><Logo /></a>
 			<ul class="flex">
 				{#each navigationLinks as { label, href }}
 					<li>
@@ -31,9 +31,9 @@
 			<SlideCta label="07 71 10 44 70" href="tel:+33771104470" />
 		</div>
 		<div class="flex lg:hidden justify-between items-center">
-			<button class="icon"><FaBars /></button>
+			<button class="icon" aria-label="Bouton menu"><FaBars /></button>
 			<a href="/"><Logo /></a>
-			<a href="tel:+33771104470" class="icon"><FaPhone /></a>
+			<a href="tel:+33771104470" class="icon" aria-label="Nous joindre par téléphone"><FaPhone /></a>
 		</div>
 	</nav>
 </header>
