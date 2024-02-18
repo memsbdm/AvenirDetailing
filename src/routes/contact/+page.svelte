@@ -388,6 +388,8 @@
 
 	input {
 		background-color: transparent;
+		outline: none;
+		border-radius: 0;
 		@apply border-b focus:border-white outline-none duration-150 py-1;
 	}
 
