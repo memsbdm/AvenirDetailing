@@ -84,13 +84,13 @@
 <svelte:body on:mousemove={handleMousemove} />
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<section id="mousemove" class="pb-10 lg:pb-20 xl:pb-28">
+<section id="mousemove" class="pb-20 xl:py-44 xl:mb-28">
 	<div class="lg:flex">
 		<div class="lg:w-1/2">
 			<h1 class="text-2xl md:text-2xl lg:text-4xl xl:text-5xl text-center lg:text-left">
 				centre esthétique & detailing
 			</h1>
-			<p class="mt-10 mb-8 xl:mt-16 xl:mb-14">
+			<p class="mt-10 mb-8 xl:my-20">
 				Situé à Colmar dans le Haut-Rhin, <strong>avenir detailing</strong> est un centre de detailing
 				automobile qui place la satisfaction client au cœur de ses priorités. Nous offrons une gamme
 				complète de services de nettoyage automobile, allant du nettoyage de base au traitement complet
@@ -98,13 +98,6 @@
 			</p>
 			<SlideCta label="obtenir un devis en ligne" href="/contact" centered={true} />
 
-			<ul
-				class="my-10 xl:my-16 flex sm:flex justify-between text-center opacity-90 border-y-2 py-3 xl:py-4 xl:text-lg gap-5 font-extralight"
-			>
-				<li class="sm:text-left">services professionnels</li>
-				<li class="sm:text-center">produits de haute qualité</li>
-				<li class="sm:text-right">expertise et expérience</li>
-			</ul>
 		</div>
 
 		<div class="lg:w-1/2 bg-contain bg-center bg-no-repeat h-64 lg:h-auto" bind:this={imgDiv}>
@@ -112,7 +105,7 @@
 	</div>
 </section>
 
-<section class="pb-10 lg:pb-20 xl:pb-28">
+<section class="pb-20 xl:pb-44">
 	<div class="flex justify-between items-center pb-4">
 		<h2 class="title">
 			{#if innerWidth >= 768}découvrez
@@ -124,7 +117,7 @@
 	<ServicesList {services} />
 </section>
 
-<section>
+<section class="pb-20 xl:pb-44">
 	<h2 class="title title-spacing">foire aux questions</h2>
 	<div class="flex flex-col-reverse xl:flex-row">
 		<div class="xl:w-1/3 flex flex-col gap-4 md:gap-2">
