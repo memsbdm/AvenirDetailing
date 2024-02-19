@@ -388,6 +388,10 @@
 		@apply font-medium opacity-70 duration-150;
 	}
 
+	select {
+		@apply bg-black;
+	}
+
 	input, select {
 		background-color: transparent;
 		outline: none;

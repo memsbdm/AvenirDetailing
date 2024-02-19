@@ -107,7 +107,7 @@
 			</ul>
 		</div>
 
-		<div class="lg:w-1/2 bg-contain bg-center bg-no-repeat h-96 lg:h-auto" bind:this={imgDiv}>
+		<div class="lg:w-1/2 bg-contain bg-center bg-no-repeat h-64 lg:h-auto" bind:this={imgDiv}>
 		</div>
 	</div>
 </section>
