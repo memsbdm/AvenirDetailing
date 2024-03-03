@@ -393,10 +393,9 @@
 	}
 
 	input, select {
-		background-color: transparent;
 		outline: none;
 		border-radius: 0;
-		@apply border-b opacity-80 focus:opacity-100 outline-none duration-150 py-1;
+		@apply border-b opacity-80 focus:opacity-100 outline-none duration-150 py-1 bg-black;
 	}
 
 	.form__element {
