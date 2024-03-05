@@ -121,8 +121,8 @@
 	<h2 class="title title-spacing">foire aux questions</h2>
 	<div class="flex flex-col-reverse xl:flex-row">
 		<div class="xl:w-1/3 flex flex-col gap-4 md:gap-2">
-			<SlideCta label="nous appeler" href="/" />
-			<SlideCta label="nous envoyer un mail" href="/" />
+			<SlideCta label="nous appele Fon:menr" href="tel:+33771104470" />
+			<SlideCta label="nous envoyer un mail" href="mailto:contact@avenirdetailing.fr" />
 		</div>
 		<div class="xl:w-2/3">
 			{#each faq as { question, answer }}

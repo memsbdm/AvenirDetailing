@@ -8,10 +8,12 @@
 	function handleMenuClicked() {
 		menuOpen = !menuOpen;
 		if (menuOpen) {
+			console.log(1);
 			document.body.addEventListener('click', handleMenuClose)
 			document.body.style.overflow = 'hidden'
 		} else {
 			document.body.removeEventListener('click', handleMenuClose)
+			document.body.style.overflow = 'auto'
 		}
 	}
 
