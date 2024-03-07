@@ -38,7 +38,7 @@
 			<SlideCta label="07 71 10 44 70" href="tel:+33771104470" />
 		</div>
 		<div class="flex lg:hidden justify-between items-center">
-			<button id="mobileMenu" class="icon" aria-label="Bouton menu" on:click|stopPropagation={handleMenuOpen}><FaBars /></button>
+			<button class="icon" aria-label="Bouton menu" on:click|stopPropagation={handleMenuOpen}><FaBars /></button>
 			<a href="/" aria-label="Page d'accueil"><Logo /></a>
 			<a href="tel:+33771104470" class="icon" aria-label="Nous joindre par téléphone"><FaPhone /></a>
 		</div>
